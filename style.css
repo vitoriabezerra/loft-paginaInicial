@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Ropa+Sans:regular,italic);
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+ 
+}
+
+header{
+    display: flex; 
+    padding-top: 8px;
+    padding-bottom: 16px ;
+    padding-left: 44px;
+    padding-right: 44px;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.carrousel{
+  
+    display: flex;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+}
+.carrousel-img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.showhouse{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+
+}
+
+.conteudo{
+    padding: 0px 15px 10px 15px;
+}
+
+.house1, .house2{
+    display: grid;
+    height: 450px;
+    width: 500px;
+    justify-content: center;
+    background-color: #EEEEEE;
+    text-align: justify;
+
+}
+
+
+.casa1-img, .casa2-img{
+    width: 100%;
+}
+
+.price{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.situation1{
+    padding: 0px;
+    margin-right: 10px;
+    background-color: #51D275;
+    color: #ffffff;
+    border-radius: 6px;    
+    width: 56px;
+    height: 21px;
+    text-align: center;
+}
+
+.situation2{
+    padding: 0px;
+    margin-right: 10px;
+    background-color: #DC9730;
+    color: #ffffff;
+    border-radius: 6px;    
+    width: 56px;
+    height: 21px;
+    text-align: center;
+}
+
+.categorias {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    align-items: stretch;
+    height: 700px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.industrial-img, .classico-img, .moderno-img{
+    width: 936px;
+    height: 200px;
+}
+
+
+footer{
+    background-color: #333333 ;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-around;
+}
+
+
+/* p {
+    font-family: https://fonts.googleapis.com/css?family=Ropa+Sans:regular,italic;
+}  */
