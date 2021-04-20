@@ -2,6 +2,9 @@
 
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
 }
 
 body {
@@ -28,22 +31,73 @@ header{
     padding-right: 44px;
     justify-content: space-between;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    /* position:fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; */
 }
 
-
-.carrousel{
-  
+header .logo {
     display: flex;
+    align-items: center;
+    color: #777777;
+}
+
+header .logo h1 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+header .logo h2 {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+header .menu button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #777777;
+    cursor: pointer;
+    outline: 0;
+    margin: 10px;
+}
+
+header .menu button:hover {
+    transition: 0.3s;
+    color: #DC9730;
+}
+
+.carrosel{
     padding-top: 30px;
     padding-left: 100px;
     padding-right: 100px;
-    justify-content: center;
-}
-.carrousel-img{
 
-    height: 100%;
-    width: 100%;
 }
+
+section.carrosel .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.carrosel .slide {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+section.carrosel .controles {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+
 
 .showhouse{
     display: flex;
@@ -74,50 +128,90 @@ header{
 }
 
 .price{
-    padding-top: 20px;
+    padding-top: px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .situation1{
-    padding: 0px;
-    margin-right: 10px;
-    background-color: #51D275;
-    color: #ffffff;
-    border-radius: 6px;    
-    width: 56px;
-    height: 21px;
-    text-align: center;
+    border-radius: 6px;
+    margin-right: 6px;
+    padding: 3px, 8px, 8px, 3px;
+
 }
 
-.situation2{
-    padding: 0px;
-    margin-right: 10px;
-    background-color: #DC9730;
+.price h1{
+    color: #888888;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+
+}
+
+.price h2{
+    line-height: 21px;
     color: #ffffff;
-    border-radius: 6px;    
-    width: 56px;
-    height: 21px;
-    text-align: center;
+    padding: 3px, 8px, 8px, 3px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.situation1 h2{
+    background-color: #51D275;
+    margin: 6px;
+    padding: 5px 15px 5px 15px;
+}
+
+.situation2 h2{
+    background-color: #DC9730;
+    margin: 6px;
+    padding: 5px 15px 5px 15px;
+}
+
+.showhouse p{
+    font-size: 15px;
+    color: #555555;
 }
 
 .categorias {
-    display: grid;
+    display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
     padding-top: 30px;
-    align-items: stretch;
-    height: 700px;
+    height: 600px; 
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 100px;
 }
 
-.industrial-img, .classico-img, .moderno-img{
-    width: 936px;
-    height: 200px;
+.categorias h2{
+    color: #888888;
+    font-size: 25px;
+    line-height: 27px;
+
+}
+.categorias h3{
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: normal;
 }
 
+section.categorias article{
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    text-align: center;
+}
 
 footer{
     background-color: #333333 ;
@@ -125,10 +219,23 @@ footer{
     padding-top: 30px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 40px;
     justify-content: space-around;
+    align-items: center;
+
 }
 
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-/* p {
-    font-family: https://fonts.googleapis.com/css?family=Ropa+Sans:regular,italic;
-}  */
+footer p{
+    color: #ffffff;
+}
+
+.social-media{
+    justify-content: flex-start;
+}
