@@ -56,7 +56,7 @@ header .logo h2 {
 header .menu button{
     background-color: transparent;
     border: none;
-    font-size: 18px;
+    font-size: 22px;
     color: #777777;
     cursor: pointer;
     outline: 0;
@@ -189,6 +189,7 @@ section.carrosel .controles {
     color: #888888;
     font-size: 25px;
     line-height: 27px;
+    font-weight: normal;
 
 }
 .categorias h3{
@@ -221,7 +222,7 @@ footer{
     padding-right: 100px;
     padding-bottom: 40px;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
@@ -237,5 +238,5 @@ footer p{
 }
 
 .social-media{
-    justify-content: flex-start;
+    justify-content: space-around;
 }
