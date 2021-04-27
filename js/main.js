@@ -1,3 +1,4 @@
+
 console.log('JS externo funcionou');
 console.log(window);
 
@@ -71,3 +72,51 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+// document.querySelector("#btn-submit-contact").addEventListener("click", (evento) => {
+//   evento.preventDefault();
+
+//   let nomeValue = document.querySelector("#input_nome").value
+//   let emailValue = document.querySelector("#input_email").value
+
+//   console.log(nomeValue);
+//   console.log(emailValue);
+//   //validação dos campos
+//   //exibição de mensagem de erro
+//   //envio do formulario
+// });
+
+
+let formContact = document.querySelector("#form_contact");
+
+formContact.addEventListener("submit", (evento) =>{
+  evento.preventDefault();
+
+  let error = document.querySelector("#error");
+  let nomeValue = document.querySelector("#input_nome").value;
+  let emailValue = document.querySelector("#input_email").value;
+  let telefoneValue = document.querySelector("#input_telefone").value;
+  let messageValue = document.querySelector("#mensagem").value;
+
+
+  if (nomeValue && emailValue && telefoneValue && messageValue) {
+    if (nomeValue.length >= 2) {
+        if (telefoneValue.length >= 8) {
+            if (emailDefault.test(emailValue)) {
+                formContact.submit();
+            } else {
+                error.innerHTML = '<strong> Email errado </strong>';
+            }
+        }else {
+            error.innerHTML = '<strong>O número de telefone deve ter no mínimo 8 caracteres</strong>';
+        }
+    } else {
+        error.innerHTML = '<strong>O nome deve ter 2 ou mais caracteres </strong>';
+    }
+} else {
+    error.innerHTML = '<strong>Todos os campos devem ser preenchidos</strong>';
+}
+});
+
+

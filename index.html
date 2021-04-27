@@ -96,6 +96,19 @@
                 </article>
             </div>
         </section>
+        <section class="contact">
+            <h2>Contato</h2>
+            <form id="form_contact" action="thanks.html">
+                <input type="text" name="nome" id="input_nome" placeholder="Nome">
+                <input type="email" name="email" id="input_email" placeholder="E-mail">
+                <input type="text" name="telefone" id="input_telefone" placeholder="Telefone">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <strong id="error"></strong>
+                <button type="submit" id="btn-submit-contact">Entrar</button>
+
+            </form>
+
+        </section>
 
     <footer>
         <div class="mapa">
@@ -115,7 +128,7 @@
             </div>
         </div>
     </footer>
-   <script src="js/main.js"></script> 
+    <script src="js/main.js"></script> 
    <script>
        $('myModal').modal('show');
    </script>
