@@ -295,6 +295,7 @@ form {
     width: 300px;
     max-width: 100%;
     margin: 10px auto;
+    text-align: center;
 }
 
 form input,
@@ -345,9 +346,10 @@ form button {
     width: 100%;
     border: none;
 }
-/* .menu form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 
-} */
+#error{
+    text-align: center;
+    background-color: rgb(192, 107, 107);
+    color: white;
+    margin: 10px;
+}

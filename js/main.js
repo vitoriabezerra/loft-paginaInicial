@@ -92,31 +92,24 @@ let formContact = document.querySelector("#form_contact");
 
 formContact.addEventListener("submit", (evento) =>{
   evento.preventDefault();
-
-  let error = document.querySelector("#error");
-  let nomeValue = document.querySelector("#input_nome").value;
-  let emailValue = document.querySelector("#input_email").value;
-  let telefoneValue = document.querySelector("#input_telefone").value;
+  
+  let error = document.querySelector("#error")
+  let nomeValue = document.querySelector("#input_nome").value
+  let emailValue = document.querySelector("#input_email").value
+  let telefoneValue = document.querySelector("#input_telefone").value
   let messageValue = document.querySelector("#mensagem").value;
 
-
-  if (nomeValue && emailValue && telefoneValue && messageValue) {
-    if (nomeValue.length >= 2) {
-        if (telefoneValue.length >= 8) {
-            if (emailDefault.test(emailValue)) {
-                formContact.submit();
-            } else {
-                error.innerHTML = '<strong> Email errado </strong>';
-            }
-        }else {
-            error.innerHTML = '<strong>O número de telefone deve ter no mínimo 8 caracteres</strong>';
-        }
-    } else {
-        error.innerHTML = '<strong>O nome deve ter 2 ou mais caracteres </strong>';
-    }
-} else {
-    error.innerHTML = '<strong>Todos os campos devem ser preenchidos</strong>';
-}
+  if(nomeValue.length < 1 || emailValue.length <1  || telefoneValue.length<1 || messageValue.length<1){
+    error.innerHTML = '<strong> Preencha todos </strong>'
+  }
+  else if(nomeValue.length <=2){
+    error.innerHTML = '<strong>O nome deve ter no mínimo 2 caracteres</strong>';   
+  }
+  else if(telefoneValue.length<8){
+    error.innerHTML = '<strong>O número de telefone deve ter no mínimo 8 caracteres</strong>'; 
+  }
+  else{
+    formContact.submit()
+  }    
 });
-
 
